@@ -1,0 +1,33 @@
+# Gradle
+.gradle/
+build/
+out/
+!gradle/wrapper/gradle-wrapper.jar
+!gradle/wrapper/gradle-wrapper.properties
+!gradlew
+!gradlew.bat
+
+# IntelliJ IDEA
+.idea/
+*.iml
+
+# Logs / reports / temp
+logs/
+*.log
+allure-results/
+allure-report/
+*.tmp
+*.swp
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Test artifacts (если генеришь)
+target/
+
+# If you package jars locally
+*.class
+*.jar
+*.war
+*.ear
