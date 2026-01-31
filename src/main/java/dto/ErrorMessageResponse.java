@@ -9,15 +9,15 @@ package dto;
 //        }
 
 import lombok.Builder;
-import lombok.Data;
+import lombok.Value;
 
-@Data
+@Value
 @Builder(toBuilder = true)
 
 public class ErrorMessageResponse {
-    private String timestamp;
-    private int status;
-    private String error;
-    private Object message;
-    private String path;
+    String timestamp;
+    int status;
+    String error;
+    Object message;
+    String path;
 }

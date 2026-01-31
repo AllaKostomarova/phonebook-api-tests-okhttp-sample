@@ -5,13 +5,13 @@ package dto;
 //        }
 
 import lombok.Builder;
-import lombok.Data;
+import lombok.Value;
 
-@Data
+@Value
 @Builder(toBuilder = true)
 
 public class AuthRequest {
-    private String username;
-    private String password;
+    String username;
+    String password;
 
 }

@@ -1,6 +1,7 @@
 package dto;
+
 //{
-//        "token": "string"
+//        "message": "string"
 //        }
 
 import lombok.Builder;
@@ -9,6 +10,6 @@ import lombok.Value;
 @Value
 @Builder(toBuilder = true)
 
-public class AuthResponse {
-    String token;
+public class MessageResponse {
+    String message;
 }
