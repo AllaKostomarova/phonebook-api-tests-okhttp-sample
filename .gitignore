@@ -39,6 +39,6 @@ target/
 *.ear
 
 # Secrets/config (DO NOT COMMIT)
-src/test/java/data/*Local.java
+src/test/java/data/DataApiLocal.java
 src/test/resources/secrets/
 *.env

@@ -7,6 +7,10 @@ public class DataApiLocal {
     public static final String registrationEndpoint = "/v1/user/registration/usernamepassword";
     public static final String deleteContactByIdEndpoint = "/v1/contacts/";
     public static final String contactsEndpoint = "/v1/contacts";
+    public static final String contactsEndpoint = "/v1/contacts";
+    public static final String contactsEndpoint = "/v1/contacts";
+    public static final String contactsEndpoint = "/v1/contacts";
+    public static final String contactsEndpoint = "/v1/contacts";
 
 
 
