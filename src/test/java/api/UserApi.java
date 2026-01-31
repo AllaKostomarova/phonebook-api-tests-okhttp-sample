@@ -1,7 +1,7 @@
 package api;
 
 import dto.AuthRequest;
-import data.DataApi;
+import data.DataApiLocal;
 import okhttp3.Request;
 import okhttp3.RequestBody;
 import okhttp3.Response;
@@ -45,7 +45,7 @@ public class UserApi {
      * The caller must close the response using try-with-resources.
      */
     public Response loginPostRequest(String username, String password) throws IOException {
-        return authRequest(DataApi.loginEndpoint, username, password);
+        return authRequest(DataApiLocal.loginEndpoint, username, password);
     }
 
     /**
@@ -54,7 +54,7 @@ public class UserApi {
      * The caller must close the response using try-with-resources.
      */
     public Response registrationPostRequest(String username, String password) throws IOException {
-        return authRequest(DataApi.registrationEndpoint, username, password);
+        return authRequest(DataApiLocal.registrationEndpoint, username, password);
     }
 
 }

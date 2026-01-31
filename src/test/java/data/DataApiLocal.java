@@ -1,6 +1,6 @@
 package data;
 
-public class DataApi {
+public class DataApiLocal {
     public static final String BASEURL = "https://contactapp-telran-backend.herokuapp.com";
     public static final String TOKEN = "token";
     public static final String loginEndpoint = "/v1/user/login/usernamepassword";

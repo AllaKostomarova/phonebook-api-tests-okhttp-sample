@@ -1,7 +1,7 @@
 package api;
 
 import com.google.gson.Gson;
-import data.DataApi;
+import data.DataApiLocal;
 import okhttp3.*;
 import org.jetbrains.annotations.Nullable;
 
@@ -37,7 +37,7 @@ public class BaseApi {
     /**
      * Base URL for the current environment.
      */
-    private static final String BASE_URL = DataApi.BASEURL;
+    private static final String BASE_URL = DataApiLocal.BASEURL;
 
     /**
      * Concatenates the base URL with an endpoint path (e.g., "/endpoint").
