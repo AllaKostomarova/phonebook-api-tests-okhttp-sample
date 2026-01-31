@@ -1,42 +1,44 @@
-.gradle
+# Gradle
+.gradle/
 build/
+out/
 !gradle/wrapper/gradle-wrapper.jar
-!**/src/main/**/build/
-!**/src/test/**/build/
+!gradle/wrapper/gradle-wrapper.properties
+!gradlew
+!gradlew.bat
 
-### IntelliJ IDEA ###
-.idea/modules.xml
-.idea/jarRepositories.xml
-.idea/compiler.xml
-.idea/libraries/
-*.iws
+# IntelliJ IDEA
+.idea/
 *.iml
+*.iws
 *.ipr
 out/
-!**/src/main/**/out/
-!**/src/test/**/out/
 
-### Eclipse ###
-.apt_generated
-.classpath
-.factorypath
-.project
-.settings
-.springBeans
-.sts4-cache
-bin/
-!**/src/main/**/bin/
-!**/src/test/**/bin/
-
-### NetBeans ###
-/nbproject/private/
-/nbbuild/
-/dist/
-/nbdist/
-/.nb-gradle/
-
-### VS Code ###
+# VS Code
 .vscode/
 
-### Mac OS ###
+# Logs / reports / temp
+logs/
+*.log
+allure-results/
+allure-report/
+*.tmp
+*.swp
+
+# OS junk
 .DS_Store
+Thumbs.db
+
+# Test artifacts (if generated)
+target/
+
+# Build artifacts
+*.class
+*.jar
+*.war
+*.ear
+
+# Secrets/config (DO NOT COMMIT)
+src/test/java/data/*Local.java
+src/test/resources/secrets/
+*.env
